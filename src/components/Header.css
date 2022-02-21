@@ -1,0 +1,55 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-color: purple; /* For browsers that do not support gradients */
+    background-image: linear-gradient(purple, rgb(6, 5, 90));
+    border-radius: 30px;
+  }
+
+.header-items {
+  align-self: flex-start;
+}
+
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  background-color: white;
+  border: 1px solid green;
+  border-radius: 50px;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+.img-item {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.logo {
+  width: 200px;
+  height: 150px;
+}
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 860px) {
+  .img-item {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+  } 
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  .img-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+  } 
+}
